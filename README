@@ -1,0 +1,9 @@
+You need Cython and various OpenGL-related things. If you have those, running
+    python viewer_setup.py build
+should successfully compile a viewer library and hide it somewhere like
+    build/lib.linux-x86_64-2.6/viewer.so
+Copy or link it to the root directory. Then
+    python examples.py 
+should give you a list of examples, and
+    python examples.py <number or name> [parameter=value] ...
+should give you pretty pictures with mouse and keyboard control.

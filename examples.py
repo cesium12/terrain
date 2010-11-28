@@ -103,6 +103,10 @@ if __name__ == '__main__':
             for (fmt, wid), dat in zip(COLUMNS, data):
                 print fmt % (wid, dat),
             print
+        print '--rand         : randomize'
+        print '--low          : low-pass filter'
+        print '--blur[=width] : gaussian blur'
+        print '--size[=width] : world size'
     else:
         args = []
         kwargs = {}
